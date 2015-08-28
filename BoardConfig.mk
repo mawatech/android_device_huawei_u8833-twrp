@@ -52,14 +52,15 @@ BOARD_DATA_FILESYSTEM_OPTIONS := rw
 BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_PAGE_SIZE := 2048
-TARGET_PREBUILT_KERNEL := device/huawei/u8833/kernel
+#TARGET_PREBUILT_KERNEL := device/huawei/u8833/kernel
+TARGET_KERNEL_SOURCE := kernel/huawei/u8833
 
 # USB Mounting
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/u8833/kernel
+#TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/u8833/kernel
 TARGET_RECOVERY_INITRC := device/huawei/u8833/init.rc
 TARGET_RECOVERY_FSTAB := device/huawei/u8833/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
