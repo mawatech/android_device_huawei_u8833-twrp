@@ -49,11 +49,12 @@ BOARD_DATA_FILESYSTEM := ext4
 BOARD_DATA_FILESYSTEM_OPTIONS := rw
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei
+BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_PAGE_SIZE := 2048
 #TARGET_PREBUILT_KERNEL := device/huawei/u8833/kernel
 TARGET_KERNEL_SOURCE := kernel/huawei/u8833
+TARGET_KERNEL_CONFIG := u8833_defconfig
 
 # USB Mounting
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
